@@ -48,7 +48,7 @@ public class ExampleAPI {
 //                    + "Documents/UNL/Marzo - Julio 2014/IA/X B/Redes bayesianas/Elvira/"
 //                    + "elvira/D.pgmx"));
 //            Open the file containing the network
-            InputStream file = new FileInputStream(new File("C:/Users/ceci/Desktop/ExamenIRBAarreglado.pgmx"));
+            InputStream file = new FileInputStream(new File("C:/Users/ceci/Desktop/exam.pgmx"));
             // Load the Bayesian network
             PGMXReader pgmxReader = new PGMXReader();
             ProbNet probNet = pgmxReader.loadProbNet(file, bayesNetworkName).getProbNet();
@@ -140,7 +140,7 @@ public class ExampleAPI {
         System.out.println("Evidence:");
         for (Finding finding : evidence.getFindings()) {
             System.out.print("  " + finding.getVariable() + ":----------------- ");
-            rs=rs+"Evidence: "+finding.getVariable();
+            rs=rs+"Evidence: "+finding.getVariable()+" ["+finding.getState()+"]";
             System.out.println(finding.getState());
         }
         // Print the posterior probability of the state "present" of each variable of interest
@@ -154,7 +154,7 @@ public class ExampleAPI {
             try {
                 stateIndex = variable.getStateIndex("Aprobado");
                 value = posteriorProbabilitiesPotential.values[stateIndex];
-                rs=rs+" "+Util.roundedString(value, "0.001");
+                rs=rs+" "+Util.roundedString(value, "0.008");
                 System.out.println(Util.roundedString(value, "0.001"));
             } catch (InvalidStateException e) {
                 System.err.println("State \"Aprobado\" not found for variable \""+ variable.getName() + "\".");
@@ -166,7 +166,7 @@ public class ExampleAPI {
         return rs;
     }
     
-    public void presentarEquiposGanadores(JTable tabla,JTextArea a1,JLabel jl) throws Exception{
+    public void presentarTabla(JTable tabla,JTextArea a1,JLabel jl) throws Exception{
         ArrayList<ProbNode> rs2=this.ExampleAPI();
         String a ="";
         int numfilas=rs2.size();

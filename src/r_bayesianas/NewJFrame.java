@@ -148,7 +148,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         ExampleAPI a= new ExampleAPI();
         try {
-            a.presentarEquiposGanadores(jTable1,jTextArea1,jLabel2);            
+            a.presentarTabla(jTable1,jTextArea1,jLabel2);            
         } catch (Exception ex) {
             Logger.getLogger(NewJFrame.class.getName()).log(Level.SEVERE, null, ex);
         }

@@ -1,0 +1,725 @@
+// Bayesian Network
+//   Elvira format 
+
+bnet  "ExamenIAarreglado" { 
+
+// Network Properties
+
+kindofgraph = "directed";
+visualprecision = "0.00";
+version = 1.0;
+default node states = (presente , ausente);
+
+// Variables 
+
+node A(finite-states) {
+title = "Aprobacion Modulo";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =445;
+pos_y =235;
+relevance = 7.0;
+purpose = "";
+num-states = 2;
+states = ("Aprobado" "Reprobado");
+}
+
+node B(finite-states) {
+title = "Asistencias";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =663;
+pos_y =180;
+relevance = 7.0;
+purpose = "";
+num-states = 2;
+states = ("Mayor 80%" "Menor 80%");
+}
+
+node C(finite-states) {
+title = "Notas modulos anteriores";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =726;
+pos_y =227;
+relevance = 7.0;
+purpose = "";
+num-states = 3;
+states = ("alto" "medio" "bajo");
+}
+
+node D(finite-states) {
+title = "Inteligencia Artificial";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =433;
+pos_y =158;
+relevance = 7.0;
+purpose = "";
+num-states = 2;
+states = ("Aprobado" "Reprobado");
+}
+
+node E(finite-states) {
+title = "Lecciones";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =283;
+pos_y =93;
+relevance = 7.0;
+purpose = "";
+num-states = 2;
+states = ("Bueno" "Regular");
+}
+
+node F(finite-states) {
+title = "Deberes";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =389;
+pos_y =88;
+relevance = 7.0;
+purpose = "";
+num-states = 3;
+states = ("Bueno" "Regular" "Malo");
+}
+
+node G(finite-states) {
+title = "Laboratorio";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =493;
+pos_y =78;
+relevance = 7.0;
+purpose = "";
+num-states = 3;
+states = ("Bueno" "Regular" "Malo");
+}
+
+node H(finite-states) {
+title = "Examenes";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =600;
+pos_y =83;
+relevance = 7.0;
+purpose = "";
+num-states = 3;
+states = ("Bueno" "Regular" "Malo");
+}
+
+node I(finite-states) {
+title = "T_Autonomo";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =673;
+pos_y =122;
+relevance = 7.0;
+purpose = "";
+num-states = 3;
+states = ("Bueno" "Regular" "Malo");
+}
+
+node J(finite-states) {
+title = "Grado Dificultad";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =686;
+pos_y =90;
+relevance = 7.0;
+purpose = "";
+num-states = 2;
+states = ("Alta" "Baja");
+}
+
+node E1(finite-states) {
+title = "Lecciones";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =71;
+pos_y =185;
+relevance = 7.0;
+purpose = "";
+num-states = 2;
+states = ("Bueno" "Regular");
+}
+
+node D1(finite-states) {
+title = "Simulacion";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =253;
+pos_y =230;
+relevance = 7.0;
+purpose = "";
+num-states = 2;
+states = ("Aprobado" "Reprobado");
+}
+
+node F1(finite-states) {
+title = "Deberes";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =119;
+pos_y =145;
+relevance = 7.0;
+purpose = "";
+num-states = 3;
+states = ("Bueno" "Regular" "Malo");
+}
+
+node H1(finite-states) {
+title = "Examenes";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =71;
+pos_y =264;
+relevance = 7.0;
+purpose = "";
+num-states = 3;
+states = ("Bueno" "Regular" "Malo");
+}
+
+node J1(finite-states) {
+title = "Grado Dificultad";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =33;
+pos_y =229;
+relevance = 7.0;
+purpose = "";
+num-states = 2;
+states = ("Alta" "Baja");
+}
+
+node I1(finite-states) {
+title = "Trabajo Fnal";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =71;
+pos_y =304;
+relevance = 7.0;
+purpose = "";
+num-states = 3;
+states = ("Cumplio" "Parcialmente cumplio" "No cumplio");
+}
+
+node M(finite-states) {
+title = "Lecciones";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =82;
+pos_y =455;
+relevance = 7.0;
+purpose = "";
+num-states = 2;
+states = ("Bueno" "Regular");
+}
+
+node Q(finite-states) {
+title = "Sistemas Expertos";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =278;
+pos_y =379;
+relevance = 7.0;
+purpose = "";
+num-states = 2;
+states = ("Aprobado" "Reprobado");
+}
+
+node L1(finite-states) {
+title = "Deberes";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =92;
+pos_y =386;
+relevance = 7.0;
+purpose = "";
+num-states = 3;
+states = ("Bueno" "Regular" "Malo");
+}
+
+node P(finite-states) {
+title = "Examenes";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =391;
+pos_y =430;
+relevance = 7.0;
+purpose = "";
+num-states = 3;
+states = ("Bueno" "Regular" "Malo");
+}
+
+node N(finite-states) {
+title = "Grado Dificultad";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =202;
+pos_y =478;
+relevance = 7.0;
+purpose = "";
+num-states = 2;
+states = ("Alta" "Baja");
+}
+
+node O(finite-states) {
+title = "Trabajo Fnal";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =326;
+pos_y =469;
+relevance = 7.0;
+purpose = "";
+num-states = 3;
+states = ("Cumplio" "Parcialmente cumplio" "No cumplio");
+}
+
+node Q1(finite-states) {
+title = "Control Automatizado";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =681;
+pos_y =365;
+relevance = 7.0;
+purpose = "";
+num-states = 2;
+states = ("Aprobado" "Reprobado");
+}
+
+node Y1(finite-states) {
+title = "Deberes";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =723;
+pos_y =471;
+relevance = 7.0;
+purpose = "";
+num-states = 3;
+states = ("Bueno" "Regular" "Malo");
+}
+
+node Y(finite-states) {
+title = "Examenes";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =620;
+pos_y =469;
+relevance = 7.0;
+purpose = "";
+num-states = 3;
+states = ("Bueno" "Regular" "Malo");
+}
+
+node K(finite-states) {
+title = "Codigo de Etica";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =496;
+pos_y =368;
+relevance = 7.0;
+purpose = "";
+num-states = 2;
+states = ("Aprobado" "Reprobado");
+}
+
+node Y_1(finite-states) {
+title = "Examenes";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =468;
+pos_y =450;
+relevance = 7.0;
+purpose = "";
+num-states = 3;
+states = ("Bueno" "Regular" "Malo");
+}
+
+node Y_1_1(finite-states) {
+title = "Talleres";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =564;
+pos_y =448;
+relevance = 7.0;
+purpose = "";
+num-states = 3;
+states = ("Bueno" "Regular" "Malo");
+}
+
+node N_1(finite-states) {
+title = "Grado Dificultad";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =517;
+pos_y =483;
+relevance = 7.0;
+purpose = "";
+num-states = 2;
+states = ("Alta" "Baja");
+}
+
+node N_1_1(finite-states) {
+title = "Grado Dificultad";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =700;
+pos_y =437;
+relevance = 7.0;
+purpose = "";
+num-states = 2;
+states = ("Alta" "Baja");
+}
+
+node R(finite-states) {
+title = "Anteproyecto Tesis";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =662;
+pos_y =281;
+relevance = 7.0;
+purpose = "";
+num-states = 2;
+states = ("Aprobado" "Reprobado");
+}
+
+node S(finite-states) {
+title = "Presentacion tema";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =843;
+pos_y =332;
+relevance = 7.0;
+purpose = "";
+num-states = 2;
+states = ("Aprobado" "Reprobado");
+}
+
+node T(finite-states) {
+title = "Avances";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =840;
+pos_y =270;
+relevance = 7.0;
+purpose = "";
+num-states = 3;
+states = ("A tiempo y completo" "Tarde y completo" "Tarde e incompleto");
+}
+
+node LL(finite-states) {
+title = "Grado Dificultad";
+kind-of-node = chance;
+type-of-variable = finite-states;
+pos_x =920;
+pos_y =293;
+relevance = 7.0;
+purpose = "";
+num-states = 2;
+states = ("Alta" "Baja");
+}
+
+// Links of the associated graph:
+
+link B A;
+
+link C A;
+
+link D A;
+
+link D1 A;
+
+link E D;
+
+link E1 D1;
+
+link F D;
+
+link F1 D1;
+
+link G D;
+
+link H D;
+
+link H1 D1;
+
+link I D;
+
+link I1 D1;
+
+link J D;
+
+link J1 D1;
+
+link K A;
+
+link L1 Q;
+
+link LL R;
+
+link M Q;
+
+link N Q;
+
+link N_1 K;
+
+link N_1_1 Q1;
+
+link O Q;
+
+link P Q;
+
+link Q A;
+
+link Q1 A;
+
+link R A;
+
+link S R;
+
+link T R;
+
+link Y Q1;
+
+link Y1 Q1;
+
+link Y_1 K;
+
+link Y_1_1 K;
+
+//Network Relationships: 
+
+relation B { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.8 0.2 );
+}
+
+relation C { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.2 0.6 0.2 );
+}
+
+relation E { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.9 0.1 );
+}
+
+relation F { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.9 0.05 0.05 );
+}
+
+relation G { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.9 0.05 0.05 );
+}
+
+relation H { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.9 0.05 0.05 );
+}
+
+relation I { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.6 0.35 0.05 );
+}
+
+relation J { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.7 0.3 );
+}
+
+relation E1 { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.7 0.3 );
+}
+
+relation F1 { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.2 0.75 0.05 );
+}
+
+relation H1 { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.1 0.65 0.25 );
+}
+
+relation J1 { 
+comment = "";
+deterministic=false;
+values= table (0.5 0.5 );
+}
+
+relation I1 { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.6 0.35 0.05 );
+}
+
+relation D E F G H I J { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.99999999 0.999999999 0.999999 0.9999999 0.8999 0.89999 0.8 0.85 0.75 0.77 0.7 0.71 0.699 0.69 0.65 0.68 0.4999 0.499 0.75 0.76 0.68 0.6999 0.699 0.6999 0.7 0.75 0.69 0.699 0.6 0.62 0.599 0.599 0.1001 0.01 1.0E-5 1.0E-5 0.8999 0.999 0.8 0.85 0.7 0.75 0.699 0.69 0.69 0.6 0.5999 0.5999 0.62 0.65 0.599 0.599 0.19999 0.19999 0.8 0.9999 0.9 0.85 0.8 0.75 0.7 0.7 0.699 0.69 0.69 0.69 0.6 0.6 0.6 0.6 0.599 0.599 0.75 0.8 0.7 0.699 0.6 0.65 0.6 0.6 0.599 0.3 0.3 0.2999 0.20001 0.20001 0.200001 0.200001 0.101 0.1001 0.75 0.75 0.7 0.7 0.699 0.6999 0.6 0.6 0.599 0.5999 0.25 0.101 0.1001 0.25 0.101 0.101 0.1001 0.1001 0.8 0.85 0.8 0.75 0.7 0.7 0.699 0.699 0.6 0.6 0.599 0.6 0.599 0.599 0.5999 0.101 0.1001 0.1001 0.75 0.75 0.699 0.699 0.699 0.65 0.6 0.6 0.599 0.101 0.1001 0.25 0.101 0.101 0.1001 0.1001 0.1001 0.1001 0.7 0.7 0.7 0.699 0.699 0.699 0.65 0.65 0.6 0.6 0.6 0.599 0.599 0.599 0.599 0.3 0.101 0.101 0.999 0.999 0.999 0.8999 0.899 0.85 0.85 0.85 0.85 0.8 0.8 0.75 0.75 0.65 0.65 0.65 0.599 0.599 0.7 0.7 0.6999 0.7 0.7 0.7 0.699 0.65 0.65 0.7 0.7 0.69 0.69 0.6 0.599 0.599 0.101 0.101 0.8 0.75 0.75 0.7 0.699 0.699 0.7 0.7 0.699 0.699 0.65 0.6 0.6 0.5999 0.5999 0.599 0.03 0.003 0.8999 0.8999 0.85 0.85 0.8 0.8 0.7 0.75 0.75 0.8 0.7 0.7 0.7 0.7 0.7 0.7 0.6 0.6 0.75 0.75 0.7 0.7 0.6 0.6 0.599 0.599 0.2 0.2 0.101 0.101 0.2 0.2 0.101 0.101 0.101 0.001 0.7 0.899 0.75 0.75 0.699 0.699 0.65 0.65 0.6 0.6 0.599 0.599 0.599 0.599 0.5999 0.5999 0.101 0.001 0.899 0.899 0.899 0.85 0.8 0.8 0.75 0.75 0.7 0.7 0.7 0.7 0.7 0.699 0.699 0.699 0.101 0.699 0.599 0.6 0.599 0.599 0.599 0.599 0.301 0.35 0.35 0.35 0.101 0.101 0.25 0.25 0.35 0.35 0.25 0.1001 0.25 0.699 0.65 0.65 0.599 0.599 0.599 0.599 0.25 0.25 0.2 0.101 0.25 0.2 0.2 0.2 0.1001 0.001 1.0E-8 1.0E-9 1.0E-6 1.0E-7 0.1001 0.10001 0.2 0.15 0.25 0.23 0.3 0.29 0.301 0.31 0.35 0.32 0.5001 0.501 0.25 0.24 0.32 0.3001 0.301 0.3001 0.3 0.25 0.31 0.301 0.4 0.38 0.401 0.401 0.8999 0.99 0.99999 0.99999 0.1001 0.001 0.2 0.15 0.3 0.25 0.301 0.31 0.31 0.4 0.4001 0.4001 0.38 0.35 0.401 0.401 0.80001 0.80001 0.2 1.0E-4 0.1 0.15 0.2 0.25 0.3 0.3 0.301 0.31 0.31 0.31 0.4 0.4 0.4 0.4 0.401 0.401 0.25 0.2 0.3 0.301 0.4 0.35 0.4 0.4 0.401 0.7 0.7 0.7001 0.79999 0.79999 0.799999 0.799999 0.899 0.8999 0.25 0.25 0.3 0.3 0.301 0.3001 0.4 0.4 0.401 0.4001 0.75 0.899 0.8999 0.75 0.899 0.899 0.8999 0.8999 0.2 0.15 0.2 0.25 0.3 0.3 0.301 0.301 0.4 0.4 0.401 0.4 0.401 0.401 0.4001 0.899 0.8999 0.8999 0.25 0.25 0.301 0.301 0.301 0.35 0.4 0.4 0.401 0.899 0.8999 0.75 0.899 0.899 0.8999 0.8999 0.8999 0.8999 0.3 0.3 0.3 0.301 0.301 0.301 0.35 0.35 0.4 0.4 0.4 0.401 0.401 0.401 0.401 0.7 0.899 0.899 0.001 0.001 0.001 0.1001 0.101 0.15 0.15 0.15 0.15 0.2 0.2 0.25 0.25 0.35 0.35 0.35 0.401 0.401 0.3 0.3 0.3001 0.3 0.3 0.3 0.301 0.35 0.35 0.3 0.3 0.31 0.31 0.4 0.401 0.401 0.899 0.899 0.2 0.25 0.25 0.3 0.301 0.301 0.3 0.3 0.301 0.301 0.35 0.4 0.4 0.4001 0.4001 0.401 0.97 0.997 0.1001 0.1001 0.15 0.15 0.2 0.2 0.3 0.25 0.25 0.2 0.3 0.3 0.3 0.3 0.3 0.3 0.4 0.4 0.25 0.25 0.3 0.3 0.4 0.4 0.401 0.401 0.8 0.8 0.899 0.899 0.8 0.8 0.899 0.899 0.899 0.999 0.3 0.101 0.25 0.25 0.301 0.301 0.35 0.35 0.4 0.4 0.401 0.401 0.401 0.401 0.4001 0.4001 0.899 0.999 0.101 0.101 0.101 0.15 0.2 0.2 0.25 0.25 0.3 0.3 0.3 0.3 0.3 0.301 0.301 0.301 0.899 0.301 0.401 0.4 0.401 0.401 0.401 0.401 0.699 0.65 0.65 0.65 0.899 0.899 0.75 0.75 0.65 0.65 0.75 0.8999 0.75 0.301 0.35 0.35 0.401 0.401 0.401 0.401 0.75 0.75 0.8 0.899 0.75 0.8 0.8 0.8 0.8999 0.999 );
+}
+
+relation D1 E1 F1 H1 I1 J1 { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.999999 0.9999 0.89 0.75 0.7 0.699 0.699 0.7 0.699 0.699 0.5999 0.5999 0.4 0.35 0.4 0.4 0.3 0.3 0.9999 0.9999 0.899 0.899 0.7 0.7 0.699 0.5999 0.5999 0.5999 0.3 0.3 0.25 0.25 0.1001 0.1001 0.001 0.001 0.75 0.75 0.7 0.7 0.5999 0.5999 0.7 0.7 0.699 0.699 0.5999 0.5999 0.3 0.3 0.2 0.2 0.101 0.101 0.999 0.999 0.8999 0.8999 0.75 0.75 0.75 0.75 0.7 0.7 0.6999 0.6999 0.6999 0.6999 0.599 0.599 0.3 0.3 0.75 0.75 0.7 0.7 0.699 0.699 0.699 0.699 0.599 0.599 0.3 0.3 0.599 0.599 0.3 0.3 0.1001 0.1001 0.999 0.999 0.75 0.75 0.699 0.699 0.699 0.699 0.5999 0.5999 0.3 0.3 0.4001 0.4001 0.3 0.1001 0.1001 1.0E-4 1.0E-6 1.0E-4 0.11 0.25 0.3 0.301 0.301 0.3 0.301 0.301 0.4001 0.4001 0.6 0.65 0.6 0.6 0.7 0.7 1.0E-4 1.0E-4 0.101 0.101 0.3 0.3 0.301 0.4001 0.4001 0.4001 0.7 0.7 0.75 0.75 0.8999 0.8999 0.999 0.999 0.25 0.25 0.3 0.3 0.4001 0.4001 0.3 0.3 0.301 0.301 0.4001 0.4001 0.7 0.7 0.8 0.8 0.899 0.899 0.001 0.001 0.1001 0.1001 0.25 0.25 0.25 0.25 0.3 0.3 0.3001 0.3001 0.3001 0.3001 0.401 0.401 0.7 0.7 0.25 0.25 0.3 0.3 0.301 0.301 0.301 0.301 0.401 0.401 0.7 0.7 0.401 0.401 0.7 0.7 0.8999 0.8999 0.001 0.001 0.25 0.25 0.301 0.301 0.301 0.301 0.4001 0.4001 0.7 0.7 0.5999 0.5999 0.7 0.8999 0.8999 0.9999 );
+}
+
+relation M { 
+comment = "";
+deterministic=false;
+values= table (0.5 0.5 );
+}
+
+relation L1 { 
+comment = "";
+deterministic=false;
+values= table (0.3333333333333333 0.3333333333333333 0.3333333333333333 );
+}
+
+relation P { 
+comment = "";
+deterministic=false;
+values= table (0.3333333333333333 0.3333333333333333 0.3333333333333333 );
+}
+
+relation N { 
+comment = "";
+deterministic=false;
+values= table (0.5 0.5 );
+}
+
+relation O { 
+comment = "";
+deterministic=false;
+values= table (0.3333333333333333 0.3333333333333333 0.3333333333333333 );
+}
+
+relation Q M L1 P O N { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.999999 0.9999 0.89 0.75 0.7 0.699 0.699 0.7 0.699 0.699 0.5999 0.5999 0.4 0.35 0.4 0.4 0.3 0.3 0.9999 0.9999 0.899 0.899 0.7 0.7 0.699 0.5999 0.599 0.599 0.3 0.3 0.25 0.25 0.101 0.101 0.001 0.001 0.75 0.75 0.7 0.7 0.5999 0.5999 0.7 0.7 0.699 0.699 0.5999 0.5999 0.3 0.3 0.2 0.2 0.1001 0.1001 0.999 0.999 0.8999 0.8999 0.75 0.75 0.75 0.75 0.7 0.7 0.699 0.699 0.699 0.699 0.599 0.599 0.3 0.3 0.75 0.75 0.7 0.7 0.699 0.699 0.699 0.699 0.599 0.599 0.3 0.3 0.599 0.599 0.3 0.3 0.101 0.101 0.999 0.999 0.75 0.75 0.6999 0.6999 0.699 0.699 0.5999 0.5999 0.3 0.3 0.4001 0.4001 0.3 0.1001 0.1001 1.0E-4 1.0E-6 1.0E-4 0.11 0.25 0.3 0.301 0.301 0.3 0.301 0.301 0.4001 0.4001 0.6 0.65 0.6 0.6 0.7 0.7 1.0E-4 1.0E-4 0.101 0.101 0.3 0.3 0.301 0.4001 0.401 0.401 0.7 0.7 0.75 0.75 0.899 0.899 0.999 0.999 0.25 0.25 0.3 0.3 0.4001 0.4001 0.3 0.3 0.301 0.301 0.4001 0.4001 0.7 0.7 0.8 0.8 0.8999 0.8999 0.001 0.001 0.1001 0.1001 0.25 0.25 0.25 0.25 0.3 0.3 0.301 0.301 0.301 0.301 0.401 0.401 0.7 0.7 0.25 0.25 0.3 0.3 0.301 0.301 0.301 0.301 0.401 0.401 0.7 0.7 0.401 0.401 0.7 0.7 0.899 0.899 0.001 0.001 0.25 0.25 0.3001 0.3001 0.301 0.301 0.4001 0.4001 0.7 0.7 0.5999 0.5999 0.7 0.8999 0.8999 0.9999 );
+}
+
+relation Y1 { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.55 0.35 0.1 );
+}
+
+relation Y { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.85 0.1 0.05 );
+}
+
+relation Y_1 { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.85 0.1 0.05 );
+}
+
+relation Y_1_1 { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.75 0.2 0.05 );
+}
+
+relation N_1 { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.3 0.7 );
+}
+
+relation N_1_1 { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.3 0.7 );
+}
+
+relation K N_1 Y_1 Y_1_1 { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.999999 0.9999 0.89 0.75 0.7 0.699 0.5999 0.3 1.0E-5 0.999999 0.9999 0.9999 0.89 0.75 0.699 0.5999 0.3 1.0E-5 1.0E-6 1.0E-4 0.11 0.25 0.3 0.301 0.4001 0.7 0.99999 1.0E-6 1.0E-4 1.0E-4 0.11 0.25 0.301 0.4001 0.7 0.99999 );
+}
+
+relation Q1 N_1_1 Y Y1 { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.999999 0.9999 0.89 0.75 0.7 0.699 0.5999 0.3 1.0E-5 0.99999 0.9999 0.89 0.75 0.7 0.699 0.5999 0.3 1.0E-5 1.0E-6 1.0E-4 0.11 0.25 0.3 0.301 0.4001 0.7 0.99999 1.0E-5 1.0E-4 0.11 0.25 0.3 0.301 0.4001 0.7 0.99999 );
+}
+
+relation S { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.9 0.1 );
+}
+
+relation T { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.8 0.15 0.05 );
+}
+
+relation LL { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.7 0.3 );
+}
+
+relation R LL S T { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.999999 0.99 0.899999 0.100001 0.10001 0.10001 0.99999999 0.8999 0.8 0.1001 0.10001 1.0E-8 1.0E-6 0.01 0.100001 0.899999 0.89999 0.89999 1.0E-8 0.1001 0.2 0.8999 0.89999 0.99999999 );
+}
+
+relation A B C D D1 K Q Q1 R { 
+comment = "";
+kind-of-relation = potential;
+deterministic=false;
+values= table (0.999999 1.0E-5 1.0E-5 1.0E-4 1.0E-5 1.0E-5 1.0E-4 2.0E-4 1.0E-5 1.0E-4 1.0E-4 2.0E-4 1.0E-4 2.0E-4 2.0E-4 3.0E-4 1.0E-5 1.0E-4 1.0E-4 2.0E-4 1.0E-4 2.0E-4 2.0E-4 3.0E-4 1.0E-4 2.0E-4 2.0E-4 3.0E-4 2.0E-4 3.0E-4 3.0E-4 4.0E-4 1.0E-5 1.0E-4 1.0E-4 2.0E-4 1.0E-4 2.0E-4 2.0E-4 3.0E-4 1.0E-4 2.0E-4 2.0E-4 3.0E-4 2.0E-4 3.0E-4 3.0E-4 4.0E-4 1.0E-4 2.0E-4 2.0E-4 3.0E-4 2.0E-4 3.0E-4 3.0E-4 4.0E-4 2.0E-4 3.0E-4 3.0E-4 4.0E-4 3.0E-4 4.0E-4 4.0E-4 5.0E-4 0.99999 1.0E-4 1.0E-4 0.001 1.0E-4 1.0E-4 1.0E-4 0.002 1.0E-4 0.001 0.001 0.002 0.001 0.002 0.002 0.003 1.0E-4 0.01 0.01 0.003 0.001 0.002 0.002 0.003 0.001 0.002 0.002 0.003 0.002 0.003 0.003 0.004 1.0E-4 0.001 0.001 0.002 0.001 0.002 0.002 0.003 0.001 0.002 0.002 0.003 0.002 0.003 0.003 0.004 0.001 0.002 0.002 0.003 0.002 0.003 0.003 0.004 0.002 0.003 0.003 0.004 0.003 0.004 0.004 0.005 0.999 6.0E-4 6.0E-4 6.0E-4 6.0E-4 5.0E-4 5.0E-4 4.0E-4 6.0E-4 5.0E-4 5.0E-4 4.0E-4 5.0E-4 4.0E-4 4.0E-4 3.0E-4 6.0E-4 5.0E-4 5.0E-4 4.0E-4 5.0E-4 4.0E-4 4.0E-4 3.0E-4 5.0E-4 4.0E-4 4.0E-4 3.0E-4 4.0E-4 3.0E-4 3.0E-4 2.0E-4 6.0E-4 5.0E-4 5.0E-4 4.0E-4 5.0E-4 4.0E-4 4.0E-4 3.0E-4 5.0E-4 4.0E-4 4.0E-4 3.0E-4 4.0E-4 3.0E-4 3.0E-4 2.0E-4 5.0E-4 4.0E-4 4.0E-4 3.0E-4 4.0E-4 3.0E-4 3.0E-4 2.0E-4 4.0E-4 3.0E-4 3.0E-4 2.0E-4 3.0E-4 2.0E-4 2.0E-4 1.0E-4 1.0E-5 1.0E-6 1.0E-6 9.0E-7 1.0E-6 9.0E-7 9.0E-7 8.0E-7 1.0E-6 9.0E-7 9.0E-7 8.0E-7 9.0E-7 8.0E-7 8.0E-7 7.0E-7 1.0E-6 9.0E-7 9.0E-7 8.0E-7 9.0E-7 8.0E-7 8.0E-7 7.0E-7 9.0E-7 8.0E-7 8.0E-7 7.0E-7 8.0E-7 7.0E-7 7.0E-7 6.0E-7 1.0E-6 9.0E-7 9.0E-7 8.0E-7 9.0E-7 8.0E-7 8.0E-7 7.0E-7 9.0E-7 8.0E-7 8.0E-7 7.0E-7 8.0E-7 7.0E-7 7.0E-7 6.0E-7 1.0E-4 8.0E-7 8.0E-7 7.0E-7 8.0E-7 7.0E-7 7.0E-7 6.0E-7 8.0E-7 7.0E-7 7.0E-7 6.0E-7 7.0E-7 6.0E-7 6.0E-7 5.0E-7 1.0E-7 1.0E-8 1.0E-8 9.0E-9 1.0E-8 9.0E-9 9.0E-9 8.0E-9 1.0E-8 9.0E-9 9.0E-9 8.0E-9 9.0E-9 8.0E-9 8.0E-9 7.0E-9 1.0E-8 9.0E-9 9.0E-9 8.0E-9 9.0E-9 8.0E-9 8.0E-9 7.0E-9 9.0E-9 9.0E-9 8.0E-9 7.0E-9 8.0E-9 7.0E-9 7.0E-9 6.0E-9 1.0E-8 9.0E-9 9.0E-9 8.0E-9 9.0E-9 8.0E-9 8.0E-9 7.0E-9 9.0E-9 8.0E-9 8.0E-9 7.0E-9 8.0E-9 7.0E-9 7.0E-9 6.0E-9 9.0E-9 8.0E-9 8.0E-9 7.0E-9 8.0E-9 7.0E-9 7.0E-9 6.0E-9 8.0E-9 7.0E-9 7.0E-9 6.0E-9 7.0E-9 6.0E-9 6.0E-9 5.0E-9 1.0E-9 9.0E-10 9.0E-10 8.0E-10 9.0E-10 8.0E-10 8.0E-10 7.0E-10 9.0E-10 8.0E-10 8.0E-10 7.0E-10 8.0E-10 7.0E-10 7.0E-10 6.0E-10 9.0E-10 8.0E-10 8.0E-10 7.0E-10 8.0E-10 7.0E-10 7.0E-10 6.0E-10 8.0E-10 7.0E-10 7.0E-10 6.0E-10 7.0E-10 6.0E-10 6.0E-10 5.0E-10 9.0E-10 8.0E-10 8.0E-10 7.0E-10 8.0E-10 7.0E-10 7.0E-10 6.0E-10 8.0E-10 7.0E-10 7.0E-10 6.0E-10 7.0E-10 6.0E-10 6.0E-10 5.0E-9 8.0E-10 7.0E-10 7.0E-10 6.0E-10 7.0E-10 6.0E-10 6.0E-10 5.0E-10 7.0E-10 6.0E-10 6.0E-10 5.0E-10 6.0E-10 5.0E-10 5.0E-10 4.0E-10 1.0E-6 0.99999 0.99999 0.9999 0.99999 0.99999 0.9999 0.9998 0.99999 0.9999 0.9999 0.9998 0.9999 0.9998 0.9998 0.9997 0.99999 0.9999 0.9999 0.9998 0.9999 0.9998 0.9998 0.9997 0.9999 0.9998 0.9998 0.9997 0.9998 0.9997 0.9997 0.9996 0.99999 0.9999 0.9999 0.9998 0.9999 0.9998 0.9998 0.9997 0.9999 0.9998 0.9998 0.9997 0.9998 0.9997 0.9997 0.9996 0.9999 0.9998 0.9998 0.9997 0.9998 0.9997 0.9997 0.9996 0.9998 0.9997 0.9997 0.9996 0.9997 0.9996 0.9996 0.9995 1.0E-5 0.9999 0.9999 0.999 0.9999 0.9999 0.9999 0.998 0.9999 0.999 0.999 0.998 0.999 0.998 0.998 0.997 0.9999 0.99 0.99 0.997 0.999 0.998 0.998 0.997 0.999 0.998 0.998 0.997 0.998 0.997 0.997 0.996 0.9999 0.999 0.999 0.998 0.999 0.998 0.998 0.997 0.999 0.998 0.998 0.997 0.998 0.997 0.997 0.996 0.999 0.998 0.998 0.997 0.998 0.997 0.997 0.996 0.998 0.997 0.997 0.996 0.997 0.996 0.996 0.995 0.001 0.9994 0.9994 0.9994 0.9994 0.9995 0.9995 0.9996 0.9994 0.9995 0.9995 0.9996 0.9995 0.9996 0.9996 0.9997 0.9994 0.9995 0.9995 0.9996 0.9995 0.9996 0.9996 0.9997 0.9995 0.9996 0.9996 0.9997 0.9996 0.9997 0.9997 0.9998 0.9994 0.9995 0.9995 0.9996 0.9995 0.9996 0.9996 0.9997 0.9995 0.9996 0.9996 0.9997 0.9996 0.9997 0.9997 0.9998 0.9995 0.9996 0.9996 0.9997 0.9996 0.9997 0.9997 0.9998 0.9996 0.9997 0.9997 0.9998 0.9997 0.9998 0.9998 0.9999 0.99999 0.999999 0.999999 0.9999991 0.999999 0.9999991 0.9999991 0.9999992 0.999999 0.9999991 0.9999991 0.9999992 0.9999991 0.9999992 0.9999992 0.9999993 0.999999 0.9999991 0.9999991 0.9999992 0.9999991 0.9999992 0.9999992 0.9999993 0.9999991 0.9999992 0.9999992 0.9999993 0.9999992 0.9999993 0.9999993 0.9999994 0.999999 0.9999991 0.9999991 0.9999992 0.9999991 0.9999992 0.9999992 0.9999993 0.9999991 0.9999992 0.9999992 0.9999993 0.9999992 0.9999993 0.9999993 0.9999994 0.9999 0.9999992 0.9999992 0.9999993 0.9999992 0.9999993 0.9999993 0.9999994 0.9999992 0.9999993 0.9999993 0.9999994 0.9999993 0.9999994 0.9999994 0.9999995 0.9999999 0.99999999 0.99999999 0.999999991 0.99999999 0.999999991 0.999999991 0.999999992 0.99999999 0.999999991 0.999999991 0.999999992 0.999999991 0.999999992 0.999999992 0.999999993 0.99999999 0.999999991 0.999999991 0.999999992 0.999999991 0.999999992 0.999999992 0.999999993 0.999999991 0.999999991 0.999999992 0.999999993 0.999999992 0.999999993 0.999999993 0.999999994 0.99999999 0.999999991 0.999999991 0.999999992 0.999999991 0.999999992 0.999999992 0.999999993 0.999999991 0.999999992 0.999999992 0.999999993 0.999999992 0.999999993 0.999999993 0.999999994 0.999999991 0.999999992 0.999999992 0.999999993 0.999999992 0.999999993 0.999999993 0.999999994 0.999999992 0.999999993 0.999999993 0.999999994 0.999999993 0.999999994 0.999999994 0.999999995 0.999999999 0.9999999991 0.9999999991 0.9999999992 0.9999999991 0.9999999992 0.9999999992 0.9999999993 0.9999999991 0.9999999992 0.9999999992 0.9999999993 0.9999999992 0.9999999993 0.9999999993 0.9999999994 0.9999999991 0.9999999992 0.9999999992 0.9999999993 0.9999999992 0.9999999993 0.9999999993 0.9999999994 0.9999999992 0.9999999993 0.9999999993 0.9999999994 0.9999999993 0.9999999994 0.9999999994 0.9999999995 0.9999999991 0.9999999992 0.9999999992 0.9999999993 0.9999999992 0.9999999993 0.9999999993 0.9999999994 0.9999999992 0.9999999993 0.9999999993 0.9999999994 0.9999999993 0.9999999994 0.9999999994 0.999999995 0.9999999992 0.9999999993 0.9999999993 0.9999999994 0.9999999993 0.9999999994 0.9999999994 0.9999999995 0.9999999993 0.9999999994 0.9999999994 0.9999999995 0.9999999994 0.9999999995 0.9999999995 0.9999999996 );
+}
+
+}
